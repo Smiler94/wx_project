@@ -1,0 +1,30 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/addCgi/addCgi",
+        "pages/test/test"
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6F6F6",
+        "navigationBarTitleText": "Wafer Quick Start",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/test/test",
+                "iconPath": "imgs/index.png",
+                "text": "home",
+                "selectedIconPath": "imgs/index2.png"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "imgs/index.png",
+                "text": "settting",
+                "selectedIconPath": "imgs/index2.png"
+            }
+        ]
+    }
+}

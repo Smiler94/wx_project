@@ -1,0 +1,15 @@
+/* pages/test.wxss */
+.scroll-view-item_H{
+  display: inline-block;
+  width: 50%;
+  height: 300rpx;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.bc_green{background:#00FF00;}
+.bc_red{background:#FF0000;}
+.bc_yellow{background:yellow;}
+.bc_blue{background:#0000FF;}
+
+.slide-image{width:100%;}
