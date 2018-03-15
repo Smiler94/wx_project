@@ -59,7 +59,7 @@
 <progress percent="60" color="pink" />
 <progress percent="80" active />
 
-<button type="default">测试</button>
+<!-- <button type="default">测试</button>
 <button type="default" size="mini">测试</button>
 <button type="primary">测试</button>
 <button type="warn">测试</button>
@@ -70,4 +70,20 @@
   <label class="checkbox" wx:for="{{items}}">
     <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
   </label>
-</checkbox-group>
+</checkbox-group> -->
+
+<view class="cview">
+    <button bindtap="request1">普通GET</button>
+</view>
+
+<view class="cview">
+    <button bindtap="requestPost">POST</button>
+</view>
+
+<view class="cview">
+    <button bindtap = "chooseImg">选择图片</button>
+</view>
+
+<view class="cview">
+    <button bindtap="showImg">预览图片</button>
+</view>

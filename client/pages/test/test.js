@@ -49,7 +49,52 @@ Page({
 			{ name: 'TUR', value: '法国' },
 		]
 	},
+    request1 : function() {
+        wx.request({
+            url: 'https://ug6erpx5.qcloud.la',
+            method: 'GET',
+            success: function(res) {
+                console.log(res)
+            },
+            complete: function(res) {
+                console.log(res.data)
+            }
+        })
+    },
+    requestPost: function() {
+        wx.request({
+            url: 'https://demo.hcoder.net/index.php?m=postMode',
+            method: 'POST',
+            data: {'name':'hc', 'age':12},
+            header: {'content-type':'application/x-www-form-urlencode'},
+            success: function(res) {
+                console.log(res)
+            }
+        })
+    },
 
+
+    chooseImg: function() {
+        wx.chooseImage({
+            success: function(res) {
+                console.log(res)
+            },
+        })
+    },
+
+    showImg: function() {
+        var imgs = [
+            'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+            'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+            'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+        ]
+        wx.previewImage({
+            urls: imgs,
+            success: function(res) {
+                console.log(res)
+            }
+        })
+    },
 	handleTap1: function(e) {
 		console.log('tap1')
 	},
