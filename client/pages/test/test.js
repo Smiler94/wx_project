@@ -95,6 +95,42 @@ Page({
             }
         })
     },
+
+    downloadFile: function() {
+        wx.downloadFile({
+            url: "https://demo.hcoder.net/logo.png",
+            success: function(res) {
+                console.log(res)
+                wx.saveFile({
+                    tempFilePath: res.tempFilePath,
+                    success: function(res) {
+                        console.log(res)
+                    }
+                })
+            },
+            fail: function() {
+                console.log('fail')
+            }
+        })
+    },
+    
+    getlist: function() {
+        wx.getSavedFileList({
+            success: function(res) {
+                console.log(res)
+
+            }
+        })
+    },
+
+    getInfo: function() {
+        wx.getSavedFileInfo({
+            filePath: 'http://store/wx803250add18a1d90.o6zAJswHLjZHxLr4dCB1Gv5fiFEg.c05f129006042a7d8040a6ddbf7cabe3.png',
+            success: function(res) {
+                console.log(res)
+            }
+        })
+    },
 	handleTap1: function(e) {
 		console.log('tap1')
 	},

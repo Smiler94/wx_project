@@ -1,0 +1,24 @@
+<!--pages/test2.wxml-->
+<view class="cview">
+    <button bindtap="test">信息框</button>
+</view>
+
+<view class="cview">
+    <button bindtap="showModal">模态框</button>
+</view>
+
+<view class="cview">
+    <button bindtap="showSheet">操作菜单</button>
+</view>
+
+<view class="cview">
+    <button bindtap="changeTitle">修改标题</button>
+</view>
+
+<view class="cview">
+    <button bindtap="changeNavigate">跳转页面</button>
+</view>
+
+<view class="cview">
+    <button bindtap="changeTab">切换tab</button>
+</view>

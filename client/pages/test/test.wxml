@@ -87,3 +87,15 @@
 <view class="cview">
     <button bindtap="showImg">预览图片</button>
 </view>
+
+<view class="cview">
+    <button bindtap="downloadFile">下载图片</button>
+</view>
+
+<view class="cview">
+    <button bindtap="getlist">获取文件列表</button>
+</view>
+
+<view class="cview">
+    <button bindtap="getInfo">获取文件信息</button>
+</view>
