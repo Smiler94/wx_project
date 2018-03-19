@@ -1,2 +1,6 @@
 <!--pages/refresh/refresh.wxml-->
-<text>pages/refresh/refresh.wxml</text>
+<!-- <text>pages/refresh/refresh.wxml</text> -->
+<view wx:for="{{newlist}}" class="newsList">
+{{item}}
+</view>
+<view class="loadingMore">{{loadingMore}}</view>

@@ -1,1 +1,12 @@
 /* pages/refresh/refresh.wxss */
+
+.newsList{
+    padding: 10px;
+    border-bottom: 1px solid #D1D1D1;
+}
+
+.loadingMore{
+    text-align:center;
+    height:40px;
+    line-height:40px
+}
